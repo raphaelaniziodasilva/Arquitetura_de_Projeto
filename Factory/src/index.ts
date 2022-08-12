@@ -1,6 +1,7 @@
 // vamos criar a estrutura de produtos, mais antes vamos criar a interface de item generico no arquivo ItemGenerico.ts
 import { FabricadeProdutos } from "./FabricadeProdutos";
 import { FabricaGenerica } from "./FabricaGenerica";
+import { FabricaServico } from "./FabricaServico";
 import { ItemGenerico } from "./ItemGenerico";
 import { Produto } from "./Produto";
 
@@ -26,5 +27,17 @@ let fabrica: FabricaGenerica = new FabricadeProdutos()
 // vai criar o produto do tipo ItemGenerico, vai receber da fabrica criarItem
 let produto: ItemGenerico = fabrica.criarItem()
 produto.exibir()
+
+
+/* surgiu a nescessidade do nosso sistema criar um novo produto, agora vendemos serviços juntos
+
+ uma vez que a estrutura ja esta montada eu vou precisar ter alguém que implemente o item generico e alguem que saiba como fabricar esse item generico. Crie um arquivo chamado Serivo.ts
+*/
+
+let fabricaSer: FabricaGenerica = new FabricaServico()
+
+let servico: ItemGenerico = fabricaSer.criarItem()
+servico.exibir()
+
 
 
