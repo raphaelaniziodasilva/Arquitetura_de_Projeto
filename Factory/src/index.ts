@@ -12,7 +12,7 @@ import { Produto } from "./Produto";
     produto.exibir()
 */
 
-// criando o produto da forma tradicional, segunda forma o produto vai ser do tipo ItemGenerico
+// segunda forma o produto vai ser do tipo ItemGenerico
 let poduto: ItemGenerico  = new Produto()
 poduto.exibir()
 
